@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Cab_Data' inline='true' name='federated.1md0foe1b58gfs12427by12oovfy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cab_Data' name='textscan.0v34l701ge096o1etc4sx1xv0iu1'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/seanc/Documents/DataSets/DataSets/Cab_Data.csv' dataRefreshTime='' directory='C:/Users/seanc/Documents/DataSets/DataSets' filename='C:/Users/seanc/AppData/Local/Temp/TableauTemp/1l502o21k9jbq31950m1b0ve6dva/Cab_Data.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0v34l701ge096o1etc4sx1xv0iu1' name='Cab_Data.csv' table='[Cab_Data#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:G10001:no:A1:G10001:2' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Transaction ID Transaction ID' ordinal='0' />
+            <column datatype='string' name='Date of Travel Date of Travel' ordinal='1' />
+            <column datatype='string' name='Company Company' ordinal='2' />
+            <column datatype='string' name='City City' ordinal='3' />
+            <column datatype='real' name='KM Travelled KM Travelled' ordinal='4' />
+            <column datatype='real' name='Price Charged Price Charged' ordinal='5' />
+            <column datatype='real' name='Cost of Trip Cost of Trip' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0v34l701ge096o1etc4sx1xv0iu1' name='Cab_Data.csv' table='[Cab_Data#csv$]' type='table'>
+            <columns character-set='UTF-8' gridOrigin='A1:G10001:no:A1:G10001:2' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Transaction ID Transaction ID' ordinal='0' />
+              <column datatype='string' name='Date of Travel Date of Travel' ordinal='1' />
+              <column datatype='string' name='Company Company' ordinal='2' />
+              <column datatype='string' name='City City' ordinal='3' />
+              <column datatype='real' name='KM Travelled KM Travelled' ordinal='4' />
+              <column datatype='real' name='Price Charged Price Charged' ordinal='5' />
+              <column datatype='real' name='Cost of Trip Cost of Trip' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0v34l701ge096o1etc4sx1xv0iu1' name='City.csv' table='[City#csv$]' type='table'>
+            <columns gridOrigin='A1:C22:no:A1:C22:2'>
+              <column datatype='string' name='City City' ordinal='0' />
+              <column datatype='integer' name='Population Population' ordinal='1' />
+              <column datatype='integer' name='Users Users' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[City City (City.csv)]' value='[City.csv].[City City]' />
+          <map key='[City]' value='[Cab_Data.csv].[City]' />
+          <map key='[Company]' value='[Cab_Data.csv].[Company]' />
+          <map key='[Cost of Trip]' value='[Cab_Data.csv].[Cost of Trip]' />
+          <map key='[Date of Travel]' value='[Cab_Data.csv].[Date of Travel]' />
+          <map key='[KM Travelled]' value='[Cab_Data.csv].[KM Travelled]' />
+          <map key='[Population Population]' value='[City.csv].[Population Population]' />
+          <map key='[Price Charged]' value='[Cab_Data.csv].[Price Charged]' />
+          <map key='[Transaction ID]' value='[Cab_Data.csv].[Transaction ID]' />
+          <map key='[Users Users]' value='[City.csv].[Users Users]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G10001:no:A1:G10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>49995</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[City.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C22:no:A1:C22:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>40</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transaction ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Transaction ID]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>Transaction ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Travel</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date of Travel]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>Date of Travel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KM Travelled</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KM Travelled]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>KM Travelled</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price Charged</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price Charged]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>Price Charged</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Trip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cost of Trip]</local-name>
+            <parent-name>[Cab_Data.csv]</parent-name>
+            <remote-alias>Cost of Trip</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City City (City.csv)]</local-name>
+            <parent-name>[City.csv]</parent-name>
+            <remote-alias>City City</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City.csv_41FB41E720A54CAEB9554D26A56BF1A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population Population]</local-name>
+            <parent-name>[City.csv]</parent-name>
+            <remote-alias>Population Population</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City.csv_41FB41E720A54CAEB9554D26A56BF1A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Users Users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Users Users]</local-name>
+            <parent-name>[City.csv]</parent-name>
+            <remote-alias>Users Users</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[City.csv_41FB41E720A54CAEB9554D26A56BF1A1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City City (City.csv)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='real' name='[Cost of Trip]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Price Charged]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Cab_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='City.csv' datatype='table' name='[__tableau_internal_object_id__].[City.csv_41FB41E720A54CAEB9554D26A56BF1A1]' role='measure' type='quantitative' />
+      <column-instance column='[Cost of Trip]' derivation='Sum' name='[sum:Cost of Trip:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price Charged]' derivation='Sum' name='[sum:Price Charged:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1md0foe1b58gfs12427by12oovfy].[sum:Cost of Trip:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1md0foe1b58gfs12427by12oovfy]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1md0foe1b58gfs12427by12oovfy].[sum:Price Charged:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Cab_Data.csv' id='Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15'>
+            <properties context=''>
+              <relation connection='textscan.0v34l701ge096o1etc4sx1xv0iu1' name='Cab_Data.csv' table='[Cab_Data#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:G10001:no:A1:G10001:2' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Transaction ID Transaction ID' ordinal='0' />
+                  <column datatype='string' name='Date of Travel Date of Travel' ordinal='1' />
+                  <column datatype='string' name='Company Company' ordinal='2' />
+                  <column datatype='string' name='City City' ordinal='3' />
+                  <column datatype='real' name='KM Travelled KM Travelled' ordinal='4' />
+                  <column datatype='real' name='Price Charged Price Charged' ordinal='5' />
+                  <column datatype='real' name='Cost of Trip Cost of Trip' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='City.csv' id='City.csv_41FB41E720A54CAEB9554D26A56BF1A1'>
+            <properties context=''>
+              <relation connection='textscan.0v34l701ge096o1etc4sx1xv0iu1' name='City.csv' table='[City#csv$]' type='table'>
+                <columns gridOrigin='A1:C22:no:A1:C22:2'>
+                  <column datatype='string' name='City City' ordinal='0' />
+                  <column datatype='integer' name='Population Population' ordinal='1' />
+                  <column datatype='integer' name='Users Users' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[City]' />
+              <expression op='[City City (City.csv)]' />
+            </expression>
+            <first-end-point object-id='Cab_Data.csv_4A9485AA18D04BE9A0A6C0D05DDE4E15' />
+            <second-end-point object-id='City.csv_41FB41E720A54CAEB9554D26A56BF1A1' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cab_Data' name='federated.1md0foe1b58gfs12427by12oovfy' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1md0foe1b58gfs12427by12oovfy'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Cost of Trip]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Price Charged]' role='measure' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost of Trip]' derivation='Sum' name='[sum:Cost of Trip:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price Charged]' derivation='Sum' name='[sum:Price Charged:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1md0foe1b58gfs12427by12oovfy].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1md0foe1b58gfs12427by12oovfy].[sum:Cost of Trip:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1md0foe1b58gfs12427by12oovfy].[sum:Price Charged:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1md0foe1b58gfs12427by12oovfy].[none:City:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:City:nk]' />
+              <groupfilter function='member' level='[none:City:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1md0foe1b58gfs12427by12oovfy].[none:City:nk]</column>
+            <column>[federated.1md0foe1b58gfs12427by12oovfy].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1md0foe1b58gfs12427by12oovfy].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F29D8AA9-7953-4C57-A12D-468EF5B3E79B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1md0foe1b58gfs12427by12oovfy].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;[federated.1md0foe1b58gfs12427by12oovfy]&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1md0foe1b58gfs12427by12oovfy].[:Measure Names]</field>
+            <field>[federated.1md0foe1b58gfs12427by12oovfy].[none:City:nk]</field>
+            <field>[federated.1md0foe1b58gfs12427by12oovfy].[sum:Price Charged:qk]</field>
+            <field>[federated.1md0foe1b58gfs12427by12oovfy].[yr:Date of Travel:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2526B51A-B596-40D5-B879-693054CA2C5E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Sheet 1' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAAcUlEQVRYhe2YwQmAMBAEd8U+UpZYoViWlZwliGAY4XbeCTcMeRxxVZUas9ACNAlAC9Ak
+      AC1AkwC0AE0C0AI07QOs5HDbr+98vbnnBdACknRt++OZcR5TZrd/AQlAC9AkAC1AkwC0AE37
+      ACZ/hbMK/4Ab3DwRK6EyR30AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
